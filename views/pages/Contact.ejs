@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head") %>
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="cantact-coantainer">
+      <form class="form-container">
+        <input type="text" name="firstname" placeholder="firstname is ..." />
+
+        <input type="text" name="lastname" placeholder="lastname is ..." />
+        <input
+          type="text"
+          name="email"
+          placeholder="foulen ben foulen@gmail.com"
+        />
+        <input type="number" name="Qte" />
+        <button class="btn">envoyer</button>
+      </form>
+      <img class="images"
+        src="https://cdn-icons-png.flaticon.com/512/6347/6347224.png"
+        alt=""
+      />
+    </div>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

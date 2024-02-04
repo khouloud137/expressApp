@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <%- include('../partials/header'); %>
+
+    <main>
+      <div class="cards-container">
+        <div class="card-one crad-item">
+          <p>
+            <img
+              class="image-1"
+              src="https://static.vecteezy.com/system/resources/previews/033/889/730/non_2x/decorative-flower-plant-in-pot-isolated-on-transparent-background-generative-ai-free-png.png "
+              width="80%"
+              alt=""
+            />
+            <h1>Arbustes buissons</h1>
+            <p>Les arbustes permettent toute l'année de donner du caractère à votre
+            jardin. Nos arbustes ornementaux apportent couleurs et structure et
+            rendent votre jardin magnifique. Choisissez des arbustes à feuilles
+            persistantes ou nos arbustes qui attirent les papillons. Choisissez
+            l'arbuste qui vous convient et plantez le! Le succès est toujours
+            assuré avec notre garantie de floraison et de croissance à 100%.</p>
+          </p>
+        </div>
+        <div class="card-two crad-item">
+          <p>
+            
+            <img
+              class=""
+              src="https://img.teleflora.com/images/o_0/l_flowers:T95-4A,pg_6/w_272,h_340,cs_no_cmyk,c_pad/f_auto,q_auto:eco,e_sharpen:200/flowers/T95-4A/RainbowRaysPottedGerbera-Yellow "
+              width="80%"
+              alt=""
+            />
+            <h1>Arbustes buissons</h1>
+            <p>
+              Les arbustes permettent toute l'année de donner du caractère à votre
+            jardin. Nos arbustes ornementaux apportent couleurs et structure et
+            rendent votre jardin magnifique. Choisissez des arbustes à feuilles
+            persistantes ou nos arbustes qui attirent les papillons. Choisissez
+            l'arbuste qui vous convient et plantez le! Le succès est toujours
+            assuré avec notre garantie de floraison et de croissance à 100%.
+            </p>
+            
+          </p>
+        </div>
+        <div class="card-three crad-item">
+          <p>
+           
+            <img
+              class="image-1"
+              src="https://png.pngtree.com/png-clipart/20221230/original/pngtree-cactus-plant-png-image_8831902.png "
+              width="80%"
+              alt=""
+            />
+            <h1>Arbustes buissons</h1>
+            <p>
+              Les arbustes permettent toute l'année de donner du caractère à votre
+            jardin. Nos arbustes ornementaux apportent couleurs et structure et
+            rendent votre jardin magnifique. Choisissez des arbustes à feuilles
+            persistantes ou nos arbustes qui attirent les papillons. Choisissez
+            l'arbuste qui vous convient et plantez le! Le succès est toujours
+            assuré avec notre garantie de floraison et de croissance à 100%.
+            </p>
+          </p>
+        </div>
+      </div>
+      <div class="cards-collection">
+        <div class="photos-containers">
+          <img
+            src="https://emova-monceaufleurs-fr-storage.omn.proximis.com/Imagestorage/images/2560/1600/5fb26f30ac5dc_plantes_vertes_appart.jpg"
+            alt=""
+            class="animatedPhotos"
+            
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9u44T4kfEDKntIHykl5jdRxFNrIp3AB5JDxULuwF7lXkfnSfrZhjDYiusmowpLT28AtU&usqp=CAU"
+            alt=""
+            class="animatedPhotos "
+          />
+          <img
+            src="https://emova-monceaufleurs-fr-storage.omn.proximis.com/Imagestorage/images/2560/1600/5fb26f30ac5dc_plantes_vertes_appart.jpg"
+            alt=""
+            class="animatedPhotos" 
+          />
+        </div>
+        <div class="parag-containers">
+          <h1>Les plantes vivaces</h1>
+          <p>
+            Les plantes vivaces créent un jardin joyeux. Avec notre grande
+            collection de plantes colorées, d'herbes et de plantes grimpantes,
+            vous pourrez à moindre frais aménager complètement votre jardin.
+            Saviez-vous que les vivaces reviennent chaque année avec les plus
+            belles fleurs et couleurs? Nos vivaces sont issues de l'agriculture
+            biologique (sans engrais, pesticides ou ajout chimiques) et sont
+            toujours fraîches avec toujours une garantie de croissance à 100%
+          </p>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".animatedPhotos");
+        let index = 0;
+        setInterval(() => {
+          images.forEach((img) => (img.style.opacity = "0"));
+          setTimeout(() => {
+            images.forEach((img) => (img.style.display = "none"));
+            images[index].style.display = "block";
+            images[index].style.opacity = "1";
+            index = (index + 1) % images.length;
+          }, 300);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

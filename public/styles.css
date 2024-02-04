@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #b3ffd6;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: none;
+  color: green;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  background-color: #047b34de;
+  color: #fff;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: flex;
+  justify-content: space-between;
+  min-height: 15vh;
+  align-items: center;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  width: 85%;
+}
+li {
+  list-style-type: none;
+}
+/* #bgvideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  } */
+
+.nav-link,
+.nav-link {
+  background-color: #00ff77;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.nav-link:hover,
+a:active {
+  background-color: rgba(3, 68, 4, 0.856);
+}
+.cards-container {
+  /* border: 1px solid black; */
+
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card-one {
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: rgba(73, 220, 203, 0.998) 0px 30px 60px -12px inset,
+    rgba(50, 244, 1, 0) 0px 18px 36px -18px inset;
+}
+.card-two {
+  /* border: 1px solid brown; */
+  width: 25%;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(5, 203, 18, 0.25) 0px 30px 60px -12px inset,
+    rgba(51, 202, 5, 0.692) 0px 18px 36px -18px inset;
+}
+.card-three {
+  /* border: 1px solid brown; */
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 70px;
+  box-shadow: rgba(21, 172, 114, 0.83) 0px 30px 60px -12px inset,
+    rgba(4, 200, 47, 0.778) 0px 18px 36px -18px inset;
+}
+.crad-item {
+  transition: transform 0.3s;
+}
+.crad-item h1 {
+  text-align: center;
+  font-family: "Single Day", cursive;
+  color: black;
+}
+.crad-item > p {
+  font-family: "Single Day", cursive;
+}
+.crad-item {
+  text-align: center;
+}
+.crad-item:hover {
+  transform: scale(1.1);
+}
+.image-1 {
+  margin-left: 50px;
+}
+.form-container {
+  border: 1px solid black;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  gap: 20px;
+  border-radius: 15px;
+  /* box-shadow: rgb(191, 200, 211) 0px 20px 30px -10px; */
+  margin-left: 40px;
+  padding: 20px;
+}
+.form-container input {
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn {
+  all: unset;
+  border: 1px solid black;
+  width: 50%;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+  margin: auto;
+}
+.cantact-coantainer {
+  display: flex;
+  justify-content: space-between;
+}
+.cantact-coantainer .images {
+  /* margin-left: 90px; */
+  animation: mymove 5s infinite;
+  margin-right: 90px;
+}
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+.animatedPhotos {
+  width: 400px;
+  height: 400px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 14px;
+}
+
+.cards-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 20px;
+}
+.parag-containers p {
+  text-align: center;
+  font-family: "Poor Story", system-ui;
+}
+.parag-containers h1 {
+  text-align: center;
+  font-family: "Single Day", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.bolg-item {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+.blog-carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
