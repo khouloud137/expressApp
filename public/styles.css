@@ -132,7 +132,6 @@ a:active {
   margin-left: 50px;
 }
 .form-container {
-  border: 1px solid black;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
@@ -160,6 +159,7 @@ a:active {
 .cantact-coantainer {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .cantact-coantainer .images {
   /* margin-left: 90px; */
@@ -176,6 +176,7 @@ a:active {
   height: 400px;
   transition: opacity 0.3s ease-in-out;
   border-radius: 14px;
+  opacity: 0;
 }
 
 .cards-collection {
@@ -196,9 +197,12 @@ a:active {
   font-size: 1.5rem;
 }
 .bolg-item {
-  border: 1px solid black;
   width: 300px;
   height: 300px;
+}
+.bolg-item img {
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .blog-carta {
   display: flex;
@@ -207,4 +211,49 @@ a:active {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 50px;
+  padding-bottom: 20px;
+}
+.titles {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Single Day", cursive;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.social-icons .facebook {
+  color: #3b5998; /* Couleur des icônes */
+  font-size: 50px; /* Taille des icônes */
+  margin-right: 10px; /* Marge entre les icônes */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+}
+.social-icons .instagram {
+  color: #e4405f; /* Couleur des icônes */
+  font-size: 50px; /* Taille des icônes */
+  margin-right: 10px; /* Marge entre les icônes */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+}
+.contact-icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons a {
+  color: #333; /* Couleur des icônes */
+  font-size: 24px; /* Taille des icônes */
+  margin-right: 10px; /* Marge entre les icônes */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+}
+
+.phone:hover {
+  color: #007bff; /* Couleur de survol pour le téléphone */
+}
+
+.email:hover {
+  color: #d36b25; /* Couleur de survol pour l'e-mail */
 }
