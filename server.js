@@ -7,18 +7,18 @@ app.use(express.static("./public"));
 app.set("view engine", "ejs");
 
 // use res.render to load up an ejs view file
-// app.use((req, res, next) => {
-//   const now = new Date();
-//   const day = now.getDay();
-//   const hour = now.getHours();
+app.use((req, res, next) => {
+  const now = new Date();
+  const day = now.getDay();
+  const hour = now.getHours();
 
-//   const isavailbale = day >= 1 && day <= 7 && hour >= 9 && hour < 17;
-//   if (isavailbale) {
-//     next();
-//   } else {
-//     res.status(500).render("pages/notfound");
-//   }
-// });
+  const isavailbale = day >= 1 && day <= 7 && hour >= 9 && hour < 17;
+  if (isavailbale) {
+    next();
+  } else {
+    res.status(500).render("pages/notfound");
+  }
+});
 // index page
 app.get("/", function (req, res) {
   res.render("pages/index");
